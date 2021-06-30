@@ -1,14 +1,15 @@
 'use strict';
-
+// let btn1 = document.getElementById("btn1")
+// let btn2 = document.getElementById("btn2")
+//let contener= document.getElementById("div1")
+let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+let mainTotel = 0;
+let listOfShops = [];
 let divEL = document.getElementById("list1");
 let tableEl = document.createElement("table");
 divEL.appendChild(tableEl);
+let tfootEl = document.createElement("tr");
 
-
-
-let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-
-let listOfShops = [];
 function firstRaw() {
     let trEl = document.createElement("tr");
     tableEl.appendChild(trEl);
@@ -26,12 +27,12 @@ function firstRaw() {
 };
 
 function lastRaw() {
-    let tfootEl = document.createElement("tr");
+    tfootEl = document.createElement("tr");
     let tdEl = document.createElement("td");
     tdEl.textContent = "Totals: ";
     tfootEl.appendChild(tdEl);
     tableEl.appendChild(tfootEl);
-    let mainTotel = 0;
+    
     for (let h = 0; h < hours.length; h++) {
         let tdEl = document.createElement("td");
         let sum = 0;
@@ -92,13 +93,38 @@ Shop.prototype.render = function () {
     tdEl2.textContent = this.total;
     trEl.appendChild(tdEl2);
     tableEl.appendChild(trEl);
+
 }
+
 let seattle = new Shop("Seattle", 23, 65, 6.3);
 let tokyo = new Shop("Tokyo", 3, 24, 1.2);
 let dubai = new Shop("Dubai", 11, 38, 3.7);
 let paris = new Shop("Paris", 20, 38, 2.3);
 let lima = new Shop("Lima", 2, 16, 4.6);
-firstRaw();
+
+
+let myFormEl = document.getElementById("myForm");
+myFormEl.addEventListener("submit", addP);
+
+function addP(event) {
+    event.preventDefault();
+    let shopName = event.target.shopLoc.value;
+    let minCust = event.target.minCust.value;
+    let maxCust = event.target.maxCust.value;
+    let avg = event.target.avg.value;
+    let newShops=new Shop(shopName, minCust, maxCust, avg);
+
+    newShops.csutRandom();
+    newShops.cookiesRandom();
+    newShops.render();
+    tfootEl.remove();
+    
+    lastRaw();
+
+}
+
+
+ firstRaw();
 for (let i = 0; i < listOfShops.length; i++) {
     listOfShops[i].csutRandom();
     listOfShops[i].cookiesRandom();

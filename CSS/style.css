@@ -116,7 +116,11 @@
     padding: 30px;
   }
 
-
+#div1{
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+}
   footer{
       background-color: chocolate;
   }
