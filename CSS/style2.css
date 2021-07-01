@@ -1,54 +1,16 @@
+/* 
+                JUST FOR TEST
+*/
+/* 
 * {
-    /* font-family: Arial, sans-serif; */
-    font-family: 'Nunito Sans', sans-serif;
-  }
-  h1{
-    text-align: left;
-    font-size: 50px;
-    font-weight: bolder;
-}
-  
-  img {
-    width: 100px;
-  }
-  table,tr,th{
-    padding: 15px;;
-    border: 2px solid black;
-    border-collapse: collapse;
-    width: 100px;
-
-  }
-  table,tr,td{
-    padding: 15px;;
-    border: 2px solid black;
-    border-collapse: collapse;
-    width: 100px;
-
-  }
-  table {
-    margin: 50px;
-    border-spacing: 50px;
-    /* width:100%; */
-    background-color: burlywood;
-    border: 5px solid black;
-  }
-  th td {
-    text-align: center;
-  }
-  * {
     box-sizing: border-box;
   }
   html {
     scroll-behavior: smooth;
   }
-  form{
-    background-color:brown;
-    margin: 50px;
-    border: 5px solid black;
-    
-  }
-  form fieldset{
-    padding: 10px;
+
+* {
+    font-family: Arial, sans-serif;
   }
   img {
     width: 900px;
@@ -59,7 +21,11 @@
       position: sticky;
       top: 0;
   }
-  
+  h1{
+      text-align: left;
+      font-size: 50px;
+      font-weight: bolder;
+  }
   nav ul li{
     text-align: center;
     font-size: 50px;
@@ -127,20 +93,9 @@
     padding: 30px;
   }
 
-#div1{
-  width: 300px;
-  height: 300px;
-  border: 2px solid red;
-}
-#loc{
-  border: 5px solid black;
-  margin: 150px;
-  background-color:darkgoldenrod;
-}
+
   footer{
       background-color: chocolate;
   }
 
-  
-  
-  
+   */
