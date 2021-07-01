@@ -1,6 +1,13 @@
 * {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
   }
+  h1{
+    text-align: left;
+    font-size: 50px;
+    font-weight: bolder;
+}
+  
   img {
     width: 100px;
   }
@@ -19,8 +26,11 @@
 
   }
   table {
+    margin: 50px;
     border-spacing: 50px;
-    width:100%;
+    /* width:100%; */
+    background-color: burlywood;
+    border: 5px solid black;
   }
   th td {
     text-align: center;
@@ -31,9 +41,14 @@
   html {
     scroll-behavior: smooth;
   }
-
-* {
-    font-family: Arial, sans-serif;
+  form{
+    background-color:brown;
+    margin: 50px;
+    border: 5px solid black;
+    
+  }
+  form fieldset{
+    padding: 10px;
   }
   img {
     width: 900px;
@@ -44,11 +59,7 @@
       position: sticky;
       top: 0;
   }
-  h1{
-      text-align: left;
-      font-size: 50px;
-      font-weight: bolder;
-  }
+  
   nav ul li{
     text-align: center;
     font-size: 50px;
@@ -120,6 +131,11 @@
   width: 300px;
   height: 300px;
   border: 2px solid red;
+}
+#loc{
+  border: 5px solid black;
+  margin: 150px;
+  background-color:darkgoldenrod;
 }
   footer{
       background-color: chocolate;
