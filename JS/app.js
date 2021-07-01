@@ -3,7 +3,7 @@
 // let btn2 = document.getElementById("btn2")
 //let contener= document.getElementById("div1")
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-let mainTotel = 0;
+
 let listOfShops = [];
 let divEL = document.getElementById("list1");
 let tableEl = document.createElement("table");
@@ -32,6 +32,7 @@ function lastRaw() {
     tdEl.textContent = "Totals: ";
     tfootEl.appendChild(tdEl);
     tableEl.appendChild(tfootEl);
+    let mainTotel = 0;
     
     for (let h = 0; h < hours.length; h++) {
         let tdEl = document.createElement("td");
